@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="flex1 w-full max-w-[300px]">
             <Link href={"/"} className="mb-4 flex items-center gap-1.5">
               <span className="flex size-10 items-center justify-center rounded-md bg-linear-to-br from-red-600 to-orange-500 text-white">
-                <s className="size-6" />
+                <Dumbbell className="size-6" />
               </span>
               <span className="text-lg font-semibold text-white">E-Sultan</span>
             </Link>
