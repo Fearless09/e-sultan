@@ -1,4 +1,3 @@
-import { Dumbbell } from "lucide-react";
 import { ImageResponse } from "next/og";
 
 // Image metadata
@@ -14,7 +13,6 @@ export default function Icon() {
     // ImageResponse JSX element
     <div
       style={{
-        fontSize: 24,
         backgroundImage: "linear-gradient(to bottom right, #dc2626, #f97316)",
         borderRadius: "8px",
         width: "100%",
