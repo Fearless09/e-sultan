@@ -14,11 +14,12 @@ export default function LeadTrainer() {
         </h2>
 
         <main className="grid items-center gap-12 md:grid-cols-2">
-          <main className="aspect-square overflow-hidden rounded-xl bg-slate-200 drop-shadow-2xl drop-shadow-orange-500/15">
+          <main className="relative aspect-square overflow-hidden rounded-xl bg-slate-200 drop-shadow-2xl drop-shadow-orange-500/15">
             <Image
               src={img}
               alt="Lead Coach"
               fill
+              sizes="100%"
               className="object-cover object-center"
             />
           </main>

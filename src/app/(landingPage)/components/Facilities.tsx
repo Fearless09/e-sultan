@@ -22,16 +22,17 @@ export default function FacilityShowcase() {
               key={idx}
               className="group transition-300 relative overflow-clip rounded-xl hover:drop-shadow-xl"
             >
-              <div className="aspect-square overflow-clip bg-slate-200">
+              <div className="relative aspect-square overflow-clip bg-slate-200">
                 <Image
                   src={facility.image || "/placeholder.svg"}
                   alt={facility.name}
                   fill
+                  sizes="100%"
                   className="transition-300 object-cover group-hover:scale-110"
                 />
               </div>
 
-              <div className="from-background/80 transition-300 absolute inset-0 z-1 flex flex-col justify-end rounded-xl bg-linear-to-t via-transparent to-transparent p-4 opacity-0 group-hover:opacity-100">
+              <div className="from-background/80 transition-300 absolute inset-0 z-1 flex flex-col justify-end rounded-xl bg-linear-to-t via-transparent to-transparent p-4 group-hover:opacity-100 sm:opacity-0">
                 <h3 className="mb-1 font-semibold">{facility.name}</h3>
                 <p className="text-sm text-slate-800">{facility.desc}</p>
               </div>

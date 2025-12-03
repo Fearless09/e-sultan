@@ -28,6 +28,7 @@ export default function SocialProof() {
                     src={testimonial.image || "/placeholder.svg"}
                     alt={testimonial.name}
                     fill
+                    sizes="100%"
                     className="object-cover object-center"
                   />
                 </span>

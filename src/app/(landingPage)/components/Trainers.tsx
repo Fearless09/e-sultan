@@ -28,6 +28,7 @@ export default function TrainersAuthority() {
                   src={trainer.image || "/placeholder.svg"}
                   alt={trainer.name}
                   fill
+                  sizes="100%"
                   className="object-cover object-center"
                 />
               </div>

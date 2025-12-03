@@ -74,6 +74,7 @@ export default function Hero() {
             src="/athletic-man-training-in-modern-gym-1.jpg"
             alt="Hero athlete training"
             fill
+            sizes="100%"
             className="object-cover object-center"
           />
         </main>
