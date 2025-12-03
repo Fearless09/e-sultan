@@ -12,7 +12,7 @@ export default function CTA() {
 
         <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-slate-600 sm:text-xl">
           Stop wishing for a better body. Start building one. Join 500+ members
-          who've already transformed their lives with E-Sultan Fitness.
+          who&apos;ve already transformed their lives with E-Sultan Fitness.
         </p>
 
         <div className="mb-8 flex justify-center">

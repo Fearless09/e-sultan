@@ -4,11 +4,9 @@ import { FAQType, faqs } from "@/data/faq";
 import { useToggle } from "@/hooks/useToggle";
 import { cn } from "@/utilities/utils";
 import { Plus } from "lucide-react";
-import { FC, useState } from "react";
+import { FC } from "react";
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
   return (
     <section className="bg-slate-50 py-20">
       <section className="wrapper max-w-4xl">

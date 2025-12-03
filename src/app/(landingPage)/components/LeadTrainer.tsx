@@ -43,7 +43,9 @@ export default function LeadTrainer() {
               ))}
             </div>
 
-            <p className="mt-6 text-sm text-slate-600 italic">"{mission}"</p>
+            <p className="mt-6 text-sm text-slate-600 italic">
+              &ldquo;{mission}&rdquo;
+            </p>
           </main>
         </main>
       </section>

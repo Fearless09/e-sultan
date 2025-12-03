@@ -40,7 +40,9 @@ export default function SocialProof() {
                   </p>
                 </div>
               </div>
-              <p className="text-slate-600 italic">"{testimonial.quote}"</p>
+              <p className="text-slate-600 italic">
+                &ldquo;{testimonial.quote}&rdquo;
+              </p>
               <div className="mt-4 flex gap-1">
                 {[...Array(5)].map((_, i) => (
                   <Star

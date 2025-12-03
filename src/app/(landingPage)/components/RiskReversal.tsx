@@ -9,8 +9,8 @@ export default function RiskReversal() {
         </h2>
 
         <p className="mx-auto mb-8 max-w-2xl text-xl text-slate-600">
-          We're so confident you'll love E-Sultan Fitness that we're removing
-          all the barriers to getting started.
+          We&apos;re so confident you&apos;ll love E-Sultan Fitness that
+          we&apos;re removing all the barriers to getting started.
         </p>
 
         <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -33,8 +33,8 @@ export default function RiskReversal() {
         </button>
 
         <p className="mt-8 text-sm text-slate-600 italic">
-          Our goal is your success. If you don't see results within 30 days,
-          we'll work with you to adjust your program at no extra cost.
+          Our goal is your success. If you don&apos;t see results within 30
+          days, we&apos;ll work with you to adjust your program at no extra cost.
         </p>
       </section>
     </section>
