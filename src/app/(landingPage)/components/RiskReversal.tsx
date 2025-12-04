@@ -1,5 +1,8 @@
 "use client";
 
+import { whatsAppUrl } from "@/data/nav_data";
+import Link from "next/link";
+
 export default function RiskReversal() {
   return (
     <section className="bg-slate-50 px-4 py-20">
@@ -28,13 +31,17 @@ export default function RiskReversal() {
           ))}
         </div>
 
-        <button className="transition-300 cursor-pointer rounded-lg bg-orange-500 px-8 py-4 font-bold text-white hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-600/30">
+        <Link
+          href={whatsAppUrl}
+          className="transition-300 cursor-pointer rounded-lg bg-orange-500 px-8 py-4 font-bold text-white hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-600/30"
+        >
           Start Your 7-Day Trial
-        </button>
+        </Link>
 
         <p className="mt-8 text-sm text-slate-600 italic">
           Our goal is your success. If you don&apos;t see results within 30
-          days, we&apos;ll work with you to adjust your program at no extra cost.
+          days, we&apos;ll work with you to adjust your program at no extra
+          cost.
         </p>
       </section>
     </section>

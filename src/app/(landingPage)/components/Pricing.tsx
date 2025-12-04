@@ -1,8 +1,10 @@
 "use client";
 
+import { whatsAppUrl } from "@/data/nav_data";
 import { plans } from "@/data/plans";
 import { cn } from "@/utilities/utils";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 export default function Pricing() {
   return (
@@ -22,7 +24,7 @@ export default function Pricing() {
             <div
               key={idx}
               className={cn(
-                `transition-300 rounded-xl p-6 md:p-8`,
+                `transition-300 flex flex-col rounded-xl p-6 md:p-8`,
                 "border border-slate-200 bg-slate-50 hover:border-orange-300 hover:shadow-lg hover:shadow-orange-500/20",
                 {
                   "border-2 border-orange-600 bg-linear-to-br from-orange-50 to-red-50 shadow-xl hover:border-orange-500 md:scale-105":
@@ -60,9 +62,10 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <button
+              <Link
+                href={whatsAppUrl}
                 className={cn(
-                  `transition-300 w-full cursor-pointer rounded-lg border-2 px-6 py-3 font-bold`,
+                  `transition-300 mt-auto block w-full cursor-pointer rounded-lg border-2 px-6 py-3 text-center font-bold`,
                   "border-slate-300 text-slate-900 hover:border-orange-600 hover:text-orange-600",
                   {
                     "border-orange-500 bg-orange-500 text-white hover:border-orange-600 hover:bg-orange-600 hover:text-white":
@@ -71,7 +74,7 @@ export default function Pricing() {
                 )}
               >
                 Get Started
-              </button>
+              </Link>
             </div>
           ))}
         </main>

@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="bg-slate-800 pt-16 pb-5">
       <section className="wrapper">
         <main className="mb-12 flex flex-wrap justify-between gap-12">
-          <div className="flex1 w-full max-w-[300px]">
+          <div className="flex1 w-full max-w-[300px] text-balance">
             <Link href={"/"} className="mb-4 flex items-center gap-1.5">
               <span className="flex size-10 items-center justify-center rounded-md bg-linear-to-br from-red-600 to-orange-500 text-white">
                 <Dumbbell className="size-6" />
@@ -26,11 +26,11 @@ export default function Footer() {
 
           {/* Links */}
           {Object.entries(footerLinks).map(([title, lists], index) => (
-            <div key={index} className="w-full max-w-[180px]">
+            <div key={index} className="max-w-[180px]">
               <h4 className="mb-4 font-semibold text-white capitalize">
                 {title}
               </h4>
-              <ul className="space-y-2 text-slate-300">
+              <ul className="space-y-2 text-balance text-slate-300">
                 {lists.map((list, lidx) => (
                   <li key={lidx}>
                     {list.href ? (
@@ -43,7 +43,9 @@ export default function Footer() {
                           {typeof list.icon === "string" && (
                             <span>{list.icon}</span>
                           )}
-                          {list.name}
+                          <span className="whitespace-pre-line">
+                            {list.name}
+                          </span>
                         </Link>
                       </>
                     ) : (
@@ -51,7 +53,7 @@ export default function Footer() {
                         {typeof list.icon === "string" && (
                           <span>{list.icon}</span>
                         )}
-                        <span>{list.name}</span>
+                        <span className="whitespace-pre-line">{list.name}</span>
                       </p>
                     )}
                   </li>

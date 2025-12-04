@@ -1,6 +1,8 @@
 "use client";
 
+import { whatsAppUrl } from "@/data/nav_data";
 import { MessageCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -16,10 +18,13 @@ export default function CTA() {
         </p>
 
         <div className="mb-8 flex justify-center">
-          <button className="transition-300 flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-orange-500 px-10 py-4 font-bold text-white hover:bg-orange-600 hover:shadow-xl hover:shadow-orange-500/30">
+          <Link
+            href={whatsAppUrl}
+            className="transition-300 flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-orange-500 px-10 py-4 font-bold text-white hover:bg-orange-600 hover:shadow-xl hover:shadow-orange-500/30"
+          >
             <MessageCircle className="size-5" />
             Start Free Trial
-          </button>
+          </Link>
         </div>
 
         <p className="text-sm text-slate-600">

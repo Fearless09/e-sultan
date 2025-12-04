@@ -1,5 +1,6 @@
 "use client";
 
+import { whatsAppUrl } from "@/data/nav_data";
 import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import Link from "next/link";
 
@@ -90,19 +91,19 @@ const contacts = [
   {
     icon: Phone,
     title: "Phone",
-    detail: "+63 (0)XXX-XXXX",
-    href: "tel:+63XXXXXXXXX",
+    detail: "+63 975 980 7991",
+    href: "tel:+639759807991",
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
     detail: "WhatsApp",
-    href: "https://wa.me/63XXXXXXXXX",
+    href: whatsAppUrl,
   },
   {
     icon: Mail,
     title: "Email",
-    detail: "hello@esultanfitness.com",
-    href: "mailto:hello@esultanfitness.com",
+    detail: "esultan@gmail.com",
+    href: "mailto:esultan@gmail.com",
   },
 ];

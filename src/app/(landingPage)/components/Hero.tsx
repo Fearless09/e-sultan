@@ -1,7 +1,9 @@
 "use client";
 
+import { whatsAppUrl } from "@/data/nav_data";
 import { MessageCircle, Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -43,12 +45,18 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <button className="transition-300 flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-orange-500 px-8 py-4 font-bold text-white hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-500/30">
+            <Link
+              href={whatsAppUrl}
+              className="transition-300 flex cursor-pointer items-center justify-center gap-2 rounded-lg bg-orange-500 px-8 py-4 font-bold text-white hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-500/30"
+            >
               <MessageCircle className="size-5" /> Chat on WhatsApp
-            </button>
-            <button className="transition-300 cursor-pointer rounded-lg border-2 border-orange-500 px-8 py-4 font-bold text-orange-500 hover:bg-orange-500/5">
+            </Link>
+            <Link
+              href={whatsAppUrl}
+              className="transition-300 cursor-pointer rounded-lg border-2 border-orange-500 px-8 py-4 font-bold text-orange-500 hover:bg-orange-500/5"
+            >
               Start Free Trial
-            </button>
+            </Link>
           </div>
 
           {/* Stats */}

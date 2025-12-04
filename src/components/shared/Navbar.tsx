@@ -1,6 +1,6 @@
 "use client";
 
-import { navs } from "@/data/nav_data";
+import { navs, whatsAppUrl } from "@/data/nav_data";
 import useClose from "@/hooks/useClose";
 import { useToggle } from "@/hooks/useToggle";
 import { cn } from "@/utilities/utils";
@@ -38,10 +38,13 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center">
-            <button className="transition-300 hidden cursor-pointer items-center gap-1.5 rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-500/30 md:flex">
+            <Link
+              href={whatsAppUrl}
+              className="transition-300 hidden cursor-pointer items-center gap-1.5 rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-500/30 md:flex"
+            >
               <MessageCircle className="size-4.5" />
               Chat on WhatsApp
-            </button>
+            </Link>
 
             {/* Mobile Menu Button */}
             <button
@@ -72,10 +75,13 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <button className="transition-300 flex w-full items-center justify-center gap-2 rounded-lg bg-orange-500 px-6 py-2 font-semibold text-white hover:bg-orange-600">
+          <Link
+            href={whatsAppUrl}
+            className="transition-300 flex w-full items-center justify-center gap-2 rounded-lg bg-orange-500 px-6 py-2 font-semibold text-white hover:bg-orange-600"
+          >
             <MessageCircle className="size-4.5" />
             Chat on WhatsApp
-          </button>
+          </Link>
         </main>
       </section>
     </header>

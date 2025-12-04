@@ -2,7 +2,7 @@ import { Award, Users, Zap } from "lucide-react";
 
 export const headCoach = {
   img: "/professional-fitness-coach-trainer-certified-muscu.jpg",
-  name: "Muyideen Babatunde",
+  name: "Emir Sultan",
   title: "Head Coach & Founder",
   bio: "With over 10 years of experience in the fitness industry, Coach Muyideen has trained over 500 clients, transforming bodies and changing lives. Specializing in fat loss, strength training, and functional conditioning.",
   mission:
@@ -10,8 +10,13 @@ export const headCoach = {
   credentials: [
     {
       icon: Award,
+      title: "Certified Professional Boxing Trainer",
+      description: "North American Boxing Federation (NABF)",
+    },
+    {
+      icon: Award,
       title: "Certified Personal Trainer (ISSA)",
-      description: "nternational Sports Sciences Association",
+      description: "International Sports Sciences Association",
     },
     {
       icon: Zap,
