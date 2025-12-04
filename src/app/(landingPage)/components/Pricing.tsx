@@ -33,7 +33,7 @@ export default function Pricing() {
               )}
             >
               {plan.popular && (
-                <div className="mb-4 inline-block rounded-full bg-orange-600 px-4 py-1 text-sm font-bold text-white">
+                <div className="mb-4 inline-block max-w-max rounded-full bg-orange-600 px-4 py-1 text-sm font-bold text-white">
                   Most Popular
                 </div>
               )}
