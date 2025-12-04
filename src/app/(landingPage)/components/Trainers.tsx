@@ -56,7 +56,7 @@ export default function TrainersAuthority() {
           <h3 className="mb-8 text-center text-3xl font-bold text-slate-900">
             Why Trust E-Sultan?
           </h3>
-          <div className="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-x-5 gap-y-6 text-center sm:gap-8 md:grid-cols-4">
             {stats.map((stat, idx) => (
               <div key={idx} className="rounded-xl bg-slate-100 px-4 py-8">
                 <p className="mb-2 text-4xl font-bold text-red-600">

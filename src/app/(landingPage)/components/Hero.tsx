@@ -53,7 +53,7 @@ export default function Hero() {
             </Link>
             <Link
               href={whatsAppUrl}
-              className="transition-300 cursor-pointer rounded-lg border-2 border-orange-500 px-8 py-4 font-bold text-orange-500 hover:bg-orange-500/5"
+              className="transition-300 cursor-pointer rounded-lg border-2 border-orange-500 px-8 py-4 text-center font-bold text-orange-500 hover:bg-orange-500/5"
             >
               Start Free Trial
             </Link>
